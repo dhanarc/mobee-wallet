@@ -199,11 +199,12 @@ func (c *client) GetHistory(ctx context.Context, username string, page, size int
 	// get latest coa
 	offset := (page - 1) * size
 	err = c.db.
+		Debug().
 		WithContext(ctx).
 		Limit(size).
 		Offset(offset).
 		Order("created_at desc").
-		Take(&accounts, "user_id = ?", user.ID).Error
+		Find(&accounts, "user_id = ?", user.ID).Error
 	if err != nil && !errors.Is(err, gorm.ErrRecordNotFound) {
 		return nil, shared.ErrSystemError
 	}

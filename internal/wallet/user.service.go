@@ -54,7 +54,7 @@ func (c *client) GetHistory(ctx context.Context, page, size int) ([]Transaction,
 		}
 
 		if transaction.Type == ledger.DEBIT {
-			txn.Amount = new(big.Float).Mul(transaction.Amount, new(big.Float).SetFloat64(-1)).String()
+			txn.Amount = new(big.Float).Mul(transaction.Amount, new(big.Float).SetFloat64(-1)).Text('f', shared.PrecisionAmount)
 		}
 
 		txns[i] = txn

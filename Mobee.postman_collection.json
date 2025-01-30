@@ -1,0 +1,304 @@
+{
+	"info": {
+		"_postman_id": "da02b357-a50c-4e0c-8a8d-d79c79e134af",
+		"name": "Mobee",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "1453939"
+	},
+	"item": [
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Register User 1",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\": \"dhanarjkusuma\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/register",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Balance User 1",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJtb2JlZS13YWxsZXQiLCJzdWIiOiJkaGFuYXJqa3VzdW1hIiwiZXhwIjoxNzM4MzUxMDQ4LCJpYXQiOjE3MzgyMzIyNDgsImp0aSI6IjdmMjAzNjdhLWQwNTQtNGY3MC05NWE5LWQ5ODU5MTJiMGY0MCJ9.vd_0vmrn8YLmGiEarQRwxzoGDGRMiHV2E9Tt9pF_1cc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/user/balance",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"user",
+								"balance"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "History User 1",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJtb2JlZS13YWxsZXQiLCJzdWIiOiJkaGFuYXJqa3VzdW1hIiwiZXhwIjoxNzM4MzUxMDQ4LCJpYXQiOjE3MzgyMzIyNDgsImp0aSI6IjdmMjAzNjdhLWQwNTQtNGY3MC05NWE5LWQ5ODU5MTJiMGY0MCJ9.vd_0vmrn8YLmGiEarQRwxzoGDGRMiHV2E9Tt9pF_1cc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/user/history",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"user",
+								"history"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register User 2",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\": \"jeje\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/register",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Balance User 2",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJtb2JlZS13YWxsZXQiLCJzdWIiOiJ5YWVtaWtvIiwiZXhwIjoxNzM4MzUzNjYyLCJpYXQiOjE3MzgyMzQ4NjIsImp0aSI6IjUwYTRhZjkyLTQ3YjctNDQ0OS1hMmNmLWZkNTYyYjBjOTQ4YiJ9.7Xq9mtIP1cngoSrRvC6rOVpmIM84QDxKbTlhdDoz6TQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/user/balance",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"user",
+								"balance"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "History User 2",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJtb2JlZS13YWxsZXQiLCJzdWIiOiJ5YWVtaWtvIiwiZXhwIjoxNzM4MzUzNjYyLCJpYXQiOjE3MzgyMzQ4NjIsImp0aSI6IjUwYTRhZjkyLTQ3YjctNDQ0OS1hMmNmLWZkNTYyYjBjOTQ4YiJ9.7Xq9mtIP1cngoSrRvC6rOVpmIM84QDxKbTlhdDoz6TQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/user/history",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"user",
+								"history"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Transaction",
+			"item": [
+				{
+					"name": "Deposit",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJtb2JlZS13YWxsZXQiLCJzdWIiOiJkaGFuYXJqa3VzdW1hIiwiZXhwIjoxNzM4MzUxMDQ4LCJpYXQiOjE3MzgyMzIyNDgsImp0aSI6IjdmMjAzNjdhLWQwNTQtNGY3MC05NWE5LWQ5ODU5MTJiMGY0MCJ9.vd_0vmrn8YLmGiEarQRwxzoGDGRMiHV2E9Tt9pF_1cc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"balance\": \"0.00059\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/transaction/deposit",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"transaction",
+								"deposit"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Withdraw",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJtb2JlZS13YWxsZXQiLCJzdWIiOiJkaGFuYXJqa3VzdW1hIiwiZXhwIjoxNzM4MzUxMDQ4LCJpYXQiOjE3MzgyMzIyNDgsImp0aSI6IjdmMjAzNjdhLWQwNTQtNGY3MC05NWE5LWQ5ODU5MTJiMGY0MCJ9.vd_0vmrn8YLmGiEarQRwxzoGDGRMiHV2E9Tt9pF_1cc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"amount\": \"0.00001\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/transaction/withdraw",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"transaction",
+								"withdraw"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Transfer",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJtb2JlZS13YWxsZXQiLCJzdWIiOiJkaGFuYXJqa3VzdW1hIiwiZXhwIjoxNzM4MzUxMDQ4LCJpYXQiOjE3MzgyMzIyNDgsImp0aSI6IjdmMjAzNjdhLWQwNTQtNGY3MC05NWE5LWQ5ODU5MTJiMGY0MCJ9.vd_0vmrn8YLmGiEarQRwxzoGDGRMiHV2E9Tt9pF_1cc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"to_username\": \"jeje\",\n    \"amount\": \"0.000001\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/transaction/transfer",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"transaction",
+								"transfer"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
