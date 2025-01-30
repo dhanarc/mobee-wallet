@@ -1,0 +1,12 @@
+http:
+  port: 8000
+  allowed_origins: "https://* http://*"
+  read_header_timeout: 2s
+  read_timeout: 2m
+  idle_timeout: 5m
+  write_timeout: 0s
+  graceful_shutdown_timeout: 10m
+auth:
+  key: "IRH1dPK2L75aarPl"
+database:
+  dsn: 'host=localhost user=root password=password dbname=mobee-wallet port=5432 sslmode=disable TimeZone=Asia/Jakarta'
